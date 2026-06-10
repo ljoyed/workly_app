@@ -1,0 +1,103 @@
+🛠️ Week 1: Core Portal, The Illusion, & Cloud Workspace
+Day 1: Project Setup & Database Architecture
+Focus: Core Infrastructure
+Tasks:
+[ ] Initialize a new Git repository and set up a fresh Django project (core_academy).
+[ ] Paste the schema we built into your app's models.py.
+[ ] Configure your database settings and run python manage.py makemigrations and migrate.
+[ ] Create a superuser account (python manage.py createsuperuser).
+[ ] Register all models in admin.py so you can manually input data easily.
+🎯 Milestone: You can log into the Django admin dashboard and see all corporate tables waiting for data.
+Day 2: Master UI Layout & Tailwind Setup
+Focus: Visual Atmosphere
+Tasks:
+[ ] Set up your base layout template (base.html).
+[ ] Inject the Tailwind CSS CDN and Flowbite/shadcn-inspired components script tags in the header.
+[ ] Build a dark-themed, ultra-clean corporate sidebar navigation template (Tabs: Internal Chat, Issue Tracker, My Profile).
+[ ] Create standard login/logout views using Django's built-in auth handlers, styled to look like an enterprise login portal.
+🎯 Milestone: You can log into your platform and navigate an empty, beautiful dark-mode corporate frame.
+Day 3: Tab 1 — The Slack-Like Corporate Chat Engine
+Focus: Contextual Narrative Delivery
+Tasks:
+[ ] Create a Django view for the chat route (/comms/).
+[ ] Use Django admin to seed 3–4 ChatMessage rows for Incident #001 (the PagerDuty alert, the PM panicking, the Senior Dev assigning it).
+[ ] Build the chat template: map out standard left-hand channels (#general, #engineering-alerts) and loop through the data to render message bubbles.
+🎯 Milestone: Opening the chat page shows an authentic, scrollable thread detailing the Incident #001 meltdown.
+Day 4: Tab 2 — The Linear/Jira Kanban Board
+Focus: Task Scoping
+Tasks:
+[ ] Create a dashboard view (/backlog/).
+[ ] Fetch the user's TicketAssignment instances and bucket them into a simple 3-column flexbox layout (To Do, In Progress, Completed) inside the template.
+[ ] Style each card with a clean status badge, a mono-spaced issue ID (e.g., WRK-1042), and priority flags.
+🎯 Milestone: A visually striking task board displaying your assigned incidents, matching high-end project tracking tools.
+Day 5: Crafting the Target Faulty Codebase
+Focus: The Challenge Container
+Tasks:
+[ ] Create a completely independent, tiny Django app called workly_app on GitHub.
+[ ] Implement a basic user authentication feature that runs normally.
+[ ] Inject the Bug: Intentionally break the avatar handling inside the login path to throw a TypeError if a user record lacks a profile image profile link.
+[ ] Make this repository a public Template Repository on your GitHub account.
+🎯 Milestone: You have a live target codebase hosted on GitHub that crashes reliably under specific parameters.
+Day 6: The Cloud Workspace Handoff Engine
+Focus: Seamless Dev Environment Integration
+Tasks:
+[ ] Build the Ticket Detail page (/backlog/ticket/<code_id>/).
+[ ] Program a button labeled [ 🛠️ Open Cloud Workspace ].
+[ ] Code the URL target dynamically to point directly to a new GitHub Codespace build layer: [https://codespaces.new/your-github-username/workly_app?devcontainer=true](https://codespaces.new/your-github-username/workly_app?devcontainer=true).
+🎯 Milestone: Clicking the ticket button instantly opens a working browser IDE pre-loaded with the broken codebase, completely bypassing manual machine setups.
+Day 7: Week 1 Integration Run
+Focus: Quality Assurance
+Tasks:
+[ ] Create a fresh, dummy non-admin tester profile.
+[ ] Execute the user path end-to-end: Sign up → Read Slack communications → Open the Linear Ticket → Spin up a clean cloud workspace window.
+🎯 Milestone: The entire user-acquisition-to-workspace pipeline works seamlessly without human oversight.
+🤖 Week 2: AI Automation, Webhooks, & Beta Launch
+Day 8: Standardizing the Python LLM Hook
+Focus: Senior Developer Engine
+Tasks:
+[ ] Install the official pipeline package library for your chosen AI infrastructure model via pip (openai or anthropic).
+[ ] Store your operational secure API tokens safely within your project configuration layers.
+[ ] Write an independent Python helper script inside your architecture that sends text to the chat completions API endpoint and returns responses smoothly.
+🎯 Milestone: A basic terminal script execution confirms that your code can reliably exchange raw text data packages directly with an advanced language model parser.
+Day 9: The Webhook Receiver Core
+Focus: Event Interception
+Tasks:
+[ ] Open up a custom public URL path view endpoint specifically configured to handle external server calls (/webhooks/github/).
+[ ] Write logic to catch POST requests and parse incoming GitHub JSON transaction headers securely.
+[ ] Set up ngrok or a standard localhost tunnel proxy server locally on your workstation to expose your development port to the wider web.
+🎯 Milestone: Altering status elements or pushing test commits inside GitHub triggers a visible print event tracking block output log print inside your local Django server logs.
+Day 10: Structuring the Code Review Script
+Focus: Evaluation Quality
+Tasks:
+[ ] Refine your webhook view logic to extract the raw pull request code diff strings from incoming text feeds.
+[ ] Craft a clean system prompt instructing the model to evaluate the incoming diff against the avatar validation bug rubric.
+[ ] Pass the payload securely to the AI API wrapper and map the return text arrays explicitly back to clean markdown variables.
+🎯 Milestone: Your script captures pull request diff variations and successfully maps them directly to conversational engineering critiques.
+Day 11: Hooking Up the Automation Circuit
+Focus: Automated Workflow Loop
+Tasks:
+[ ] Connect your webhook endpoint directly to your evaluation model logic loop.
+[ ] Set up data triggers to instantiate an AISubmissionReview record automatically upon receiving any foreign pull request payload.
+[ ] Program conditional flag parsing logic: if the LLM output explicitly determines a passing condition met, automatically flip the TicketAssignment status fields directly over to DONE.
+🎯 Milestone: Submitting an operational pull request update instantly adjusts user project columns on the main site platform interface layout without typing manual dashboard commands.
+Day 12: Markdown Rendering & Visual Cleanups
+Focus: Interface Polish
+Tasks:
+[ ] Implement a basic markdown-to-HTML parser extension filter directly within your template file configuration layers.
+[ ] Build the custom review report overview screen template layout (/backlog/review/<id>/).
+[ ] Style the output container layout to neatly mirror a live code review pull request review page thread.
+🎯 Milestone: Highly granular code reviews display cleanly as polished, readable technical documentation tabs on your web portal interface.
+Day 13: Adversarial Verification Testing
+Focus: Edge-Case Robustness
+Tasks:
+[ ] Execute a flawed, quick-fix resolution patch against the cloud repo to see if the evaluation model flags systemic oversights or hard-coded shortcuts.
+[ ] Refine the evaluation prompt guidelines if the code checking parameters fail to flag structural oversights effectively.
+[ ] Verify error tracking pipelines perform correctly if external API communication loops drop out intermittently.
+🎯 Milestone: Your AI reliably catches quick, low-quality code patches while safely approving deep structural fixes.
+Day 14: Production Deployment & Beta Delivery
+Focus: Deployment Day
+Tasks:
+[ ] Launch your Django server stack online via a deployment platform like Render, Fly.io, or an equivalent lightweight virtual host environment.
+[ ] Map all operational GitHub production webhook connection points directly to your new live domain links.
+[ ] Select 5–10 waiting beta testers from your list and distribute activation credentials to run through the live environment loop.
+🎯 Milestone: Real, external junior developers are actively using your online portal platform, resolving production-simulated tickets, and generating real automated code critiques.
